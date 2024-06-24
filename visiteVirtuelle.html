@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- //Interdire les clics droits -->
+<script type='text/javascript'>
+    //<![CDATA[ 
+    document.addEventListener('contextmenu', function(e){
+        if (e.target.nodeName === 'IMG') {
+            e.preventDefault();
+        }
+    }, false);
+    //]]>
+    </script>
+<body>
+    <a href="index.html">
+        <img src="images/back.svg" alt="Retour à l'accueil" style="background-color: white; border-radius: 8px;">
+    </a>
+    <h2 style="margin-top: 0px;">Mes dernières visites virtuelles</h2>
+    <p id="sousTitre" style=" margin-bottom: 50px;">Une immersion totale dans votre futur projet. Avec votre souris, regardez autour de vous et déplacez vous de pièces en pièces.</p>
+    <h4 style="text-align: center;">Visite virtuelle n°1</h4>
+<div id="visiteVirt">
+    <iframe src="https://app.lapentor.com/sphere/appartements-nordheim" frameborder="0" width="90%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+</div>
+<h4 style="text-align: center;">Visite virtuelle n°2</h4>
+<div id="visiteVirt">
+    <iframe src="https://app.lapentor.com/sphere/appartement-106-m2" frameborder="0" width="90%%" height="500px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+</div>
+<h4 style="text-align: center;">Visite virtuelle n°3</h4>
+<div id="visiteVirt"></div>
+<iframe src="https://app.lapentor.com/sphere/test-3d-1698224882" frameborder="0" width="100%" height="400px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+</div>
+
+<div id="contact">
+    <img src="images/alex.jpeg" width="250px" alt="">
+    <p style="background-color: rgb(243, 243, 243); color: #303030; font-size: large;">Mail : alexandrelpa3d@gmail.com <br> <br>
+    Téléphone : 06.20.42.04.11</p>
+    
+    </div>
+</body>
+</html>
